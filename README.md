@@ -1,54 +1,19 @@
-# KJ Central
+# README
 
-**Blazing fast, heavily featured Karaoke app for the professional Karaoke host**
+## About
 
----
+This is the official Wails React-TS template.
 
-## Motivation
+You can configure the project by editing `wails.json`. More information about the project settings can be found
+here: https://wails.io/docs/reference/project-config
 
-We are building a pro-grade karaoke player to empower professional karaoke hosts with a reliable, fast, and feature-rich application. Our goal is to deliver an exceptional experience with advanced capabilities tailored for professional use.
+## Live Development
 
-## Tech Stack Overview
+To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
+server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
+and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
+to this in your browser, and you can call your Go code from devtools.
 
-- **Go 1.22+**: Core programming language
-- **Wails v3**: Desktop application framework
-- **malgo**: Audio playback and processing
-- **SignalSmith-Stretch**: Audio signal processing
-- **Beat-and-Tempo-Tracking**: Rhythm analysis and synchronization
-- **libACA**: Audio content analysis
-- **libebur128**: Integrated loudness measurement
-- **chromaprint**: Audio fingerprinting
-- **SQLite**: Local storage and database management
+## Building
 
-## Quickstart
-
-### Clone the repository
-
-```bash
-git clone https://github.com/veteran-software/kj-central.git
-```
-
-
-### Build the project
-
-Navigate into the project directory and run:
-
-```bash
-cd KJ-Central wails build
-```
-
-
-### Run the application
-
-After building, start the app:
-
-```bash
-wails serve
-```
-
-
-Enjoy your professional karaoke experience!
-
----
-
-*For further details, contribute, or report issues, please refer to the project's documentation or contact the maintainers.*
+To build a redistributable, production mode package, use `wails build`.
